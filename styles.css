@@ -1,0 +1,78 @@
+:root {
+  --ink: #33211f;
+  --rose: #c36d78;
+  --rose-dark: #9d4d5a;
+  --cream: #fff9f3;
+  --gold: #b68a52;
+  --line: #ead9cb;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: "DM Sans", sans-serif; color: var(--ink); }
+h1, h2, h3 { font-family: "Playfair Display", serif; }
+.serif { font-family: "Playfair Display", serif; }
+
+.site-header {
+  background: rgba(255, 249, 243, .92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(182, 138, 82, .18);
+}
+.nav-link { position: relative; }
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: var(--gold);
+  left: 0; right: 0; bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+.premium-button {
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.premium-button:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(157, 77, 90, .18); }
+.course-card { transition: transform .28s ease, box-shadow .28s ease; }
+.course-card:hover { transform: translateY(-7px); box-shadow: 0 22px 42px rgba(72, 42, 36, .13); }
+.course-image { transition: transform .5s ease; }
+.course-card:hover .course-image { transform: scale(1.05); }
+.reveal { animation: rise .75s both; }
+.reveal-delay { animation: rise .75s .14s both; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.focus-ring:focus-visible {
+  outline: 3px solid #b68a52;
+  outline-offset: 3px;
+}
+.mobile-panel { display: none; }
+.mobile-panel.open { display: block; }
+
+/* Evita que el header fijo tape el inicio de cada sección al hacer scroll */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 767px) {
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: inline-flex; }
+  main { width: 100%; }
+  .site-header > div { min-height: 60px; padding-top: 12px; padding-bottom: 12px; }
+  section[id] { scroll-margin-top: 68px; }
+  .premium-button, [data-scroll-target], [data-course] { min-height: 50px; }
+  .hero-actions { width: 100%; }
+  .hero-actions > button { width: 100%; justify-content: center; }
+  .course-card { width: 100%; }
+  .course-card img { min-height: 210px; }
+  #nosotras img { height: 320px; }
+  #contact-form { padding: 20px; }
+  footer { text-align: center; }
+  footer .flex { justify-content: center; }
+}
+@media (min-width: 768px) {
+  .mobile-toggle { display: none; }
+  .mobile-panel { display: none !important; }
+}

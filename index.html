@@ -1,269 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos de Belleza Profesional</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Expertas</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-template-id="__page-root" class="w-full overflow-x-hidden" style="background: rgb(255, 249, 243);">
+  <header class="site-header fixed top-0 z-50 w-full">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+      <a href="#inicio" class="focus-ring rounded-sm">
+        <span data-template-id="brand-name" class="canva-text serif text-2xl font-semibold tracking-tight" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 26px;">Studio Expertas</span>
+      </a>
+      <nav aria-label="Navegación principal" class="desktop-nav flex items-center gap-8 text-sm font-semibold">
+        <a data-template-id="nav-courses" href="#cursos" class="canva-link nav-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Cursos</a>
+        <a data-template-id="nav-about" href="#nosotras" class="canva-link nav-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Sobre nosotras</a>
+        <a data-template-id="nav-contact" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-link nav-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Contacto</a>
+      </nav>
+      <button id="menu-button" type="button" class="mobile-toggle focus-ring rounded-md p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" aria-label="Navegación móvil" class="mobile-panel border-t border-[#ead9cb] bg-[#fff9f3] px-5 py-5">
+      <div class="flex flex-col gap-4 text-sm font-semibold">
+        <a data-template-id="mobile-nav-courses" href="#cursos" class="canva-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Cursos</a>
+        <a data-template-id="mobile-nav-about" href="#nosotras" class="canva-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Sobre nosotras</a>
+        <a data-template-id="mobile-nav-contact" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring rounded-sm" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Contacto</a>
+      </div>
+    </nav>
+  </header>
 
-    <header class="main-header">
-        <div class="logo-container">
-            <div class="logo-blur">
-                <img src="/imgs/logo.png" alt="Logo" class="logo-img">
-            </div>
+  <main>
+    <section id="inicio" class="w-full pt-20">
+      <div data-template-id="hero-section" class="canva-section mx-auto grid max-w-7xl overflow-hidden md:grid-cols-2 md:rounded-b-[3rem]" style="background: rgb(248, 232, 227);">
+        <div class="flex flex-col justify-center px-6 py-16 sm:px-10 md:px-14 lg:py-24">
+          <p data-template-id="hero-eyebrow" class="canva-text mb-5 text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 12px;">Tu talento, tu firma</p>
+          <h1 data-template-id="hero-title" class="canva-text reveal max-w-xl font-semibold leading-[1.03]" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 32px;">Convierte tu pasión por la belleza en arte.</h1>
+          <p data-template-id="hero-description" class="canva-text reveal-delay mt-6 max-w-lg text-base leading-7 md:text-lg" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 18px;">Te ofrecemos cursos online especializados para que aprendas, desde la comodidad de tu hogar, técnicas profesionales de cejas y pestañas, ideales para emprender y generar ingresos con tus conocimientos.</p>
+          <div class="hero-actions reveal-delay mt-9 flex flex-col gap-3 sm:flex-row">
+            <button data-template-id="hero-courses-button" type="button" class="canva-button premium-button focus-ring rounded-full px-6 py-3 font-bold" data-scroll-target="cursos" style="background: rgb(157, 77, 90); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver cursos</button>
+            <a data-template-id="hero-enroll-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button focus-ring rounded-full border px-6 py-3 font-bold transition hover:bg-white text-center" style="background: rgb(255, 249, 243); color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">Inscribirme</a>
+          </div>
         </div>
-
-        <nav class="main-nav">
-            <button class="nav-tab active" onclick="cambiarPestaña(0)">Curso Completo Cejas - Laminado, Diseño y Henna</button>
-            <button class="nav-tab" onclick="cambiarPestaña(1)">Lifting Avanzado - Técnica Coreana MIX</button>
-            <button class="nav-tab" onclick="cambiarPestaña(2)">Laminaker Pro - Lifting De Pestañas - Bonus Laminado de Cejas</button>
-            <button class="nav-tab" onclick="cambiarPestaña(3)">Información - Guía Profesional de moldes</button>
-        </nav>
-
-        <div class="social-buttons">
-            <a href="https://wa.me/+573207015183" target="_blank" class="btn-social whatsapp">WhatsApp</a>
-            <a href="https://www.instagram.com/studioexpertas?igsh=MW9wNXlsb2hmcGo1aQ==" target="_blank" class="btn-social instagram">Instagram</a>
-            <a href="https://www.tiktok.com/@studioexpertas?_r=1&_t=ZS-97gZ7xJKZbU" target="_blank" class="btn-social tiktok">TikTok</a>
+        <div class="relative min-h-[360px] md:min-h-full">
+          <img data-template-id="hero-image" loading="lazy" class="canva-image absolute inset-0 h-full w-full object-cover" src="./imgs/Logo.jpg" alt="Gemini_Generated_Image_1eqdia1eqdia1eqd.jpg">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#33211f]/25 to-transparent"></div>
+          <div class="absolute bottom-3 left-6 right-6 rounded-2xl border border-white/40 bg-white/75 p-4 backdrop-blur-md">
+            <p data-template-id="hero-image-note" class="canva-text text-sm font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 16px;">Belleza que se aprende. Talento que se comparte.</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main class="content-container">
-
-        <section class="tab-content active">
-            <div class="hero-section">
-                <div class="text-main">
-                    <h1>Aprende Diseño, Henna y Laminado de Cejas</h1>
-                    <p>¿Te imaginas poder generar tus propios ingresos sin salir de casa?
-                       Si eres madre, ama de casa o simplemente una mujer que quiere emprender en el mundo de la belleza, pero no sabes por dónde empezar, este curso es para ti.
-                       Con nuestro Curso Completo de diseño de cejas, depilación, pigmentación con henna y laminado de cejas, aprenderás desde cero 2 técnicas en un solo curso.
-                    </p>
-                    <div class="lista-aprendizaje">
-                        <h3>¿Qué vas a aprender?</h3>
-                        <ul>
-                            <li>Introducción al diseño de cejas</li>
-                            <li>Proporciones ideales.</li>
-                            <li>Bioseguridad.</li>
-                            <li>Cómo debe ser tu espacio de trabajo.</li>
-                            <li>Herramientas básicas.</li>
-                            <li>Medición y diseño básico.</li>
-                            <li>Diseño según tipo de rostro.</li>
-                            <li>Práctica de diseño.</li>
-                            <li>Epilación con hilo y técnica de anudado correcta.</li>
-                            <li>Epilación de cejas con hilo.</li>
-                            <li>Errores comunes y cómo evitarlos.</li>
-                            <li>Introducción a la henna y consistencia ideal.</li>
-                            <li>Preparación de la piel y teoría del color.</li>
-                            <li>Técnica de aplicación y cuidados post-aplicación.</li>
-                            <li>Protocolo completo paso a paso.</li>
-                            <li>Práctica completa en modelo real.</li>
-                            <li>Edición de fotos y videos.</li>
-                            <li>Marketing y gestión financiera.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="offer-box">
-                    <img class="fondo-cejas-1"  src="imgs/fondo-cejas-1.jpg">
-                    <h3>¡OFERTA ESPECIAL DE HOY!</h3>
-                    <h2>3 TÉCNICAS EN 1 CURSO</h2>
-                    <p class="old-price">Valor total $50 USD ❌</p>
-                    <p class="current-price">Ahora solo <strong>$23,99 USD</strong></p>
-                    <a href="https://pay.hotmart.com/M94629089G?off=s8hg9h5g&checkoutMode=10&ref=P103989842L&bid=1782929201262" target="_blank" class="btn-buy">COMPRAR AHORA</a>
-                </div>
+    <section id="cursos" class="w-full scroll-mt-20 px-5 py-20 md:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl">
+          <p data-template-id="courses-eyebrow" class="canva-text text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 12px;">Explora tu especialidad</p>
+          <h2 data-template-id="courses-title" class="canva-text mt-3 font-semibold leading-tight" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 24px;">Cursos para crear, transformar y destacar</h2>
+          <p data-template-id="courses-description" class="canva-text mt-4 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 17px;">Elige la técnica que quieres aprender y recibe asesoría personalizada.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article data-template-id="course-makeup-card" class="canva-card course-card overflow-hidden rounded-3xl border border-[#ead9cb] bg-white" style="background: rgb(255, 255, 255);">
+            <div class="h-53 overflow-hidden">
+              <img data-template-id="course-makeup-image" loading="lazy" class="canva-image course-image h-full w-full object-cover" src="./imgs/laminaker.jpeg" alt="laminaker.jpg">
             </div>
-
-            <h2 class="section-title">¿Qué incluye el curso?</h2>
-            <div class="gallery-section">
-                <div class="image-card">
-                    <h3>Diseño de Cejas</h3>
-                    <img class="course-img" src="imgs/diseñoDeCejas.jpg" alt="Diseño de cejas">
-                </div>
-                <div class="image-card">
-                    <h3>Depilación con Hilo</h3>
-                    <img class="course-img" src="imgs/depilacionHilo.jpg" alt="Depilación con hilo">
-                </div>
-                <div class="image-card">
-                    <h3>Pigmentación con Henna</h3>
-                    <img class="course-img" src="imgs/henna-1.jpg" alt="Pigmentación con henna">
-                </div>
-                <div class="image-card">
-                    <h3>Laminado de Cejas</h3>
-                    <img class="course-img" src="imgs/laminado.jpg" alt="Laminado de cejas">
-                </div>
+            <div class="p-6">
+              <h3 data-template-id="course-makeup-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Laminaker Pro: Lifting de pestañas - Bonus Laminado de cejas</h3>
+              <p data-template-id="course-makeup-description" class="canva-text mt-3 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Aprende lifting de pestañas y laminado de cejas en solo 7 días, perfecciona tu técnica y adquiere los conocimientos necesarios para comenzar a ofrecer estos servicios y generar ingresos con tu talento.</p>
+              <a data-template-id="course-makeup-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold underline decoration-[#b68a52] underline-offset-4" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">Quiero consultar</a>
             </div>
-
-            <div class="bonos">
-                <p class="bonos-title">Además, ¡¡te llevas 3 bonos gratis!!</p>
-                <div class="lista-bonos"> 
-                    <ul>
-                        <li>EBOOK</li>
-                        <li>Guías Profesionales</li>
-                        <li>Master Class Brow Lamination</li>
-                        <li>Ebook Brow Lamination</li>
-                        <li>Acceso a la comunidad</li>
-                    </ul>
-                </div>
+          </article>
+          <article data-template-id="course-hair-card" class="canva-card course-card overflow-hidden rounded-3xl border border-[#ead9cb] bg-white" style="background: rgb(255, 255, 255);">
+            <div class="h-53 overflow-hidden">
+              <img data-template-id="course-hair-image" loading="lazy" class="canva-image course-image h-full w-full object-cover" src="./imgs/lifting_coreano.jpeg" alt="lifting_coreano.jpg">
             </div>
-
-            <div class="features-list">
-                <p>✨ Más de 35 clases pregrabadas para que estudies a tu ritmo.</p>
-                <p>✨ Acceso inmediato y de por vida.</p>
-                <p>✨ Soporte para resolver dudas.</p>
-                <p>✨ Certificado al finalizar.</p>
-                <p>✨ Garantía de satisfacción.</p>
+            <div class="p-6">
+              <h3 data-template-id="course-hair-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Lifting avanzado - técnica coreana mix</h3>
+              <p data-template-id="course-hair-description" class="canva-text mt-3 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Si ya realizas lifting de pestañas, la técnica coreana te ayudará a perfeccionar tus resultados y diferenciarte en el mercado.</p>
+              <a data-template-id="course-hair-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold underline decoration-[#b68a52] underline-offset-4" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">Quiero consultar</a>
             </div>
-        </section>
-
-        <section class="tab-content">
-            <div class="hero-section">
-                <div class="text-main">
-                    <h1>Lifting Avanzado - Técnica Coreana MIX</h1>
-                    <p class="subtitle">Domina la técnica más avanzada del lifting y aumenta el valor de tu servicio.</p>
-                    <p>¿Ya hiciste un curso de lifting pero tus resultados no son consistentes? La Técnica Coreana te da en 7 días el control totla de cada aplicación para que dejes de improvisar y te conviertas en la referente de tu zona.</p>
-                    <p>El curso es <strong class="virtual">100% virtual</strong> y eso te permite ver las clases las veces que necesites pausar y practicar mientras avanzas.</p>
-
-                    <div class="lista-aprendizaje">
-                        <h3>¿Que vas a aprender?</h3>
-                        <ul>
-                            <li>Elevar sin Adhesivos</li>
-                            <li>Modelar con Técnica Coreana</li>
-                            <li>Fijar y sellar el resultado</li>
-                            <li>Presentar y Fidelizar</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="incluidos-list">
-                        <h3>¿Qué incluye este curso?</h3>
-                        <ul>
-                            <li>Más de 25 clases pregrabadas para que estudies a tu ritmo.</li>
-                            <li>Acceso inmediato y de por vida.</li>
-                            <li>Soporte para resolver dudas</li>
-                            <li>Certificado al finalizar</li>
-                            <li>Garantía</li>
-                            <li>6 bonos gratis.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="offer-box">
-                    <h3>¡OFERTA ESPECIAL DE HOY!</h3>
-                    <h2>LIFTING AVANZADO COREANO</h2>
-                    <p class="old-price">Valor total $59.99 USD ❌</p>
-                    <p class="current-price">Ahora solo <strong>$29,99 USD con bonos incluidos</strong></p>
-                    <a href="https://enlace-de-pago-curso2.com" target="_blank" class="btn-buy">COMPRAR AHORA</a>
-                </div>
+          </article>
+          <article data-template-id="course-nails-card" class="canva-card course-card overflow-hidden rounded-3xl border border-[#ead9cb] bg-white" style="background: rgb(255, 255, 255);">
+            <div class="h-53 overflow-hidden">
+              <img data-template-id="course-nails-image" loading="lazy" class="canva-image course-image h-full w-full object-cover" src="./imgs/ebook.jpeg" alt="ebook.jpg">
             </div>
-
-            <h2 class="section-title">¿Qué incluye este curso?</h2>
-            <div class="gallery-section">
-                <div class="image-card">
-                    <h3>Elevar sin Adhesivos</h3>
-                    <img class="course-img" src="imgs/elevar_sin_adh.png" alt="Lifting 1">
-                </div>
-                <div class="image-card">
-                    <h3>Modelar con Técnica Coreana</h3>
-                    <img class="course-img" src="imgs/modelado.png" alt="Lifting 2">
-                </div>
-                <div class="image-card">
-                    <h3>Fijar y sellar el resultado</h3>
-                    <img class="course-img" src="imgs/fijado.png" alt="Lifting 3">
-                </div>
-                <div class="image-card">
-                    <h3>Presentar y Fidelizar</h3>
-                    <img class="course-img" src="imgs/presentar.png" alt="Lifting 4">
-                </div>
+            <div class="p-6">
+              <h3 data-template-id="course-nails-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">E-Book moldes y curvaturas</h3>
+              <p data-template-id="course-nails-description" class="canva-text mt-3 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Aprenderás a seleccionar el molde correcto según el tipo de pestaña, identificar que curvatura favorece más a cada cliente y evitar errores comunes. </p>
+              <a data-template-id="course-nails-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold underline decoration-[#b68a52] underline-offset-4" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">Quiero consultar</a>
             </div>
-        </section>
-
-        <section class="tab-content">
-            <div class="hero-section">
-                <div class="text-main">
-                    <h1>Laminaker Pro - Lifting De Pestañas - Bonus Laminado de Cejas</h1>
-                    <p>Aprende <strong>Lifting de Pestañas</strong> y <strong>Laminado de Cejas</strong> y conviertete en experta en menos de 30 días.</p>
-                    
-                    <div class="lista-aprendizaje">
-                        <h3>¿Qué vas a aprender?</h3>
-                    </div>
-                    <div class="lista-aprendizaje">
-                        <h3>Temario Lifting</h3>
-                        <ul>
-                            <li>Anatomía ocular.</li>
-                            <li>Ciclo del pelo.</li>
-                            <li>Composición química.</li>
-                            <li>Porosidad de la pestaña.</li>
-                            <li>Moldes, curvatura y proyección.</li>
-                            <li>Contraindicaciones.</li>
-                            <li>Bioseguridad.</li>
-                            <li>Evaluacion de alergia.</li>
-                            <li>Técnica detallada.</li>
-                            <li>Errores frecuentes.</li>
-                            <li>Tinte (color en la pestaña).</li>
-                            <li>Cuidadods posteriores.</li>
-                            <li>Almacenamiento del kit.</li>
-                            <li>Oxidación de productos.</li>
-                            <li>Kits disponibles en el mercado.</li>
-                        </ul>
-                        <h3>Temario Laminado de Cejas</h3>
-                        <ul>
-                            <li>Anatomía de la ceja.</li>
-                            <li>3 Prácticas completas en modelos reales.</li>
-                            <li>Tiempos y la calidad de los productos.</li>
-                            <li>Depilación con hilo y con pinza.</li>
-                            <li>Tinte posterior al laminado.</li>
-                            <li>Hidratacion profinda y cuidados posteriores.</li>
-                            <li>Recomendaciones para la clienta.</li>
-                            <li>Indicaciones y contraindicaciones.</li>
-                            <li>Corrección de errores técnicos más comunes.</li>
-                            <li>Evaluación de simetría, forma y dirección de los vellos.</li>
-                            <li>Consejos para tomar fotos profesionales del antes y despues.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="offer-box">
-                    <h3>¡OFERTA ESPECIAL DE HOY!</h3>
-                    <h2>LAMINAKER PRO + BONUS</h2>
-                    <p class="old-price">Valor total $70 USD ❌</p>
-                    <p class="current-price">Ahora solo <strong>$34,99 USD</strong></p>
-                    <a href="https://enlace-de-pago-curso3.com" target="_blank" class="btn-buy">COMPRAR AHORA</a>
-                </div>
+          </article>
+          <article data-template-id="course-skincare-card" class="canva-card course-card overflow-hidden rounded-3xl border border-[#ead9cb] bg-white" style="background: rgb(255, 255, 255);">
+            <div class="h-53 overflow-hidden">
+              <img data-template-id="course-skincare-image" loading="lazy" class="canva-image course-image h-full w-full object-cover" src="./imgs/guia de diseño.jpeg" alt="guia de diseño.jpg">
             </div>
-
-            <h2 class="section-title">¿Qué incluye este programa?</h2>
-            <div class="gallery-section">
-                <div class="image-card">
-                    <h3>[Título Imagen 1]</h3>
-                    <img class="course-img" src="imgs/laminaker-1.jpg" alt="Laminaker 1">
-                </div>
-                <div class="image-card">
-                    <h3>[Título Imagen 2]</h3>
-                    <img class="course-img" src="imgs/laminaker-2.jpg" alt="Laminaker 2">
-                </div>
-                <div class="image-card">
-                    <h3>[Título Imagen 3]</h3>
-                    <img class="course-img" src="imgs/laminaker-3.jpg" alt="Laminaker 3">
-                </div>
-                <div class="image-card">
-                    <h3>[Título Imagen 4]</h3>
-                    <img class="course-img" src="imgs/laminaker-4.jpg" alt="Laminaker 4">
-                </div>
+            <div class="p-6">
+              <h3 data-template-id="course-skincare-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Guía de diseño de cejas, laminado y henna.</h3>
+              <p data-template-id="course-skincare-description" class="canva-text mt-3 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Domina el diseño de cejas, epilación con hilo, henna y laminado con tinte y conviértete en la especialista que llena su agenda con miradas perfectas.</p>
+              <a data-template-id="course-skincare-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button focus-ring mt-5 inline-flex items-center gap-2 text-sm font-bold underline decoration-[#b68a52] underline-offset-4" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">Quiero consultar</a>
             </div>
-        </section>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <section class="tab-content">
-            <h2 class="section-title">Información - Guía Profesional de moldes</h2>
-            <div class="info-guide-box" style="background: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <p>Bienvenida a la zona de recursos e información técnica. Aquí podrás consultar la guía completa sobre los diferentes tipos de moldes para lifting de pestañas, curvas (S, M, L) y la correcta elección según el tipo de ojo de tu clienta.</p>
-                </div>
-        </section>
+    <section data-template-id="benefits-section" class="canva-section w-full px-5 py-16 md:px-8" style="background: rgb(243, 221, 212);">
+      <div class="mx-auto max-w-7xl">
+        <p data-template-id="benefits-eyebrow" class="canva-text text-center text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 12px;">Aprender con propósito</p>
+        <h2 data-template-id="benefits-title" class="canva-text mx-auto mt-3 max-w-2xl text-center font-semibold leading-tight" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 24px;">Una experiencia formativa que se siente cercana</h2>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-[#b68a52]/25 bg-white/55 p-6">
+            <i data-lucide="sparkles" class="mb-5 text-[#b68a52]" aria-hidden="true"></i>
+            <h3 data-template-id="benefit-practice-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Aprende desde cualquier lugar</h3>
+            <p data-template-id="benefit-practice-description" class="canva-text mt-2 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Accede a tu formación completamente online y estudia desde la comodidad de tu casa.</p>
+          </div>
+          <div class="rounded-2xl border border-[#b68a52]/25 bg-white/55 p-6">
+            <i data-lucide="award" class="mb-5 text-[#b68a52]" aria-hidden="true"></i>
+            <h3 data-template-id="benefit-experts-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Clases Pregrabadas</h3>
+            <p data-template-id="benefit-experts-description" class="canva-text mt-2 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Accede a las clases y repásalas las veces que necesites para comprender y perfeccionar cada técnica.</p>
+          </div>
+          <div class="rounded-2xl border border-[#b68a52]/25 bg-white/55 p-6">
+            <i data-lucide="clock-3" class="mb-5 text-[#b68a52]" aria-hidden="true"></i>
+            <h3 data-template-id="benefit-schedule-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Aprende a tu ritmo</h3>
+            <p data-template-id="benefit-schedule-description" class="canva-text mt-2 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Organiza tus horarios según tu tiempo y avanza a tu propio ritmo, sin horarios fijos.</p>
+          </div>
+          <div class="rounded-2xl border border-[#b68a52]/25 bg-white/55 p-6">
+            <i data-lucide="badge-check" class="mb-5 text-[#b68a52]" aria-hidden="true"></i>
+            <h3 data-template-id="benefit-certificate-title" class="canva-text font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 19px;">Certificación</h3>
+            <p data-template-id="benefit-certificate-description" class="canva-text mt-2 text-sm leading-6" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 16px;">Al finalizar tu formación, recibe tu certificado y celebra un nuevo logro en tu camino profesional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section id="nosotras" class="w-full scroll-mt-20 px-5 py-20 md:px-8">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
+        <div class="relative">
+          <img data-template-id="about-image" loading="lazy" class="canva-image h-[430px] w-full rounded-[2rem] object-cover" src="./imgs/Asesor.jpeg" alt="Estudiante practicando maquillaje durante una clase">
+        </div>
+        <div class="md:pl-8">
+          <p data-template-id="about-eyebrow" class="canva-text text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 12px;">Descubre una nueva habilidad e invierte en ti </p>
+          <h2 data-template-id="about-title" class="canva-text mt-3 font-semibold leading-tight" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 24px;">Tu momento para empezar es ahora</h2>
+          <p data-template-id="about-description-one" class="canva-text mt-5 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 17px;">Sabemos que dar el primer paso para formarte en el mundo de la belleza no siempre es fácil. Los horarios, el transporte y el costo de una academia pueden convertirse en obstáculos.</p>
+          <p data-template-id="about-description-two" class="canva-text mt-4 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: normal; font-size: 17px;">En Studio Expertas creemos que aprender algo nuevo debe estar al alcance de todos. Por eso creamos cursos 100% online, con clases prácticas y precios accesibles para que puedas formarte desde casa y a tu propio ritmo.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="w-full px-5 py-20 md:px-8">
+      <div class="mx-auto max-w-7xl">
+        <p data-template-id="testimonials-eyebrow" class="canva-text text-center text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 12px;">Voces de nuestra comunidad</p>
+        <h2 data-template-id="testimonials-title" class="canva-text mt-3 text-center font-semibold" style="color: rgb(51, 33, 31); font-weight: 600; font-style: normal; font-size: 24px;">Cada aprendizaje deja huella</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <figure data-template-id="testimonial-one-card" class="canva-card rounded-3xl p-7" style="background: rgb(255, 255, 255);">
+            <i data-lucide="quote" class="text-[#b68a52]" aria-hidden="true"></i>
+            <blockquote data-template-id="testimonial-one-quote" class="canva-text mt-5 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: italic; font-size: 16px;">"Finalmente entendí por qué mis liftings no duraban. El método es completamente diferente."</blockquote>
+            <figcaption data-template-id="testimonial-one-name" class="canva-text mt-5 text-sm font-bold" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">— Carolina M. 🇪🇸</figcaption>
+          </figure>
+          <figure data-template-id="testimonial-two-card" class="canva-card rounded-3xl p-7" style="background: rgb(248, 232, 227);">
+            <i data-lucide="quote" class="text-[#b68a52]" aria-hidden="true"></i>
+            <blockquote data-template-id="testimonial-two-quote" class="canva-text mt-5 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: italic; font-size: 16px;">"El certificado me dio la autoridad que me faltaba para cobrar 55 USD por sesión sin dudas."</blockquote>
+            <figcaption data-template-id="testimonial-two-name" class="canva-text mt-5 text-sm font-bold" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">— Emilia P.</figcaption>
+          </figure>
+          <figure data-template-id="testimonial-three-card" class="canva-card rounded-3xl p-7" style="background: rgb(255, 255, 255);">
+            <i data-lucide="quote" class="text-[#b68a52]" aria-hidden="true"></i>
+            <blockquote data-template-id="testimonial-three-quote" class="canva-text mt-5 leading-7" style="color: rgb(94, 69, 64); font-weight: 400; font-style: italic; font-size: 16px;">"Gracias por compartir tu conocimiento, antes no sabía como elegir el molde y ahora mis técnicas hacen toda la diferencia."</blockquote>
+            <figcaption data-template-id="testimonial-three-name" class="canva-text mt-5 text-sm font-bold" style="color: rgb(157, 77, 90); font-weight: 700; font-style: normal; font-size: 16px;">— Luisa F.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section data-template-id="final-cta-section" class="canva-banner mx-5 rounded-[2rem] px-6 py-16 text-center md:mx-8 md:px-10 mb-10" style="background: rgb(51, 33, 31);">
+      <p data-template-id="final-cta-eyebrow" class="canva-text text-xs font-bold uppercase tracking-[.22em]" style="color: rgb(221, 183, 125); font-weight: 700; font-style: normal; font-size: 12px;">Tu próximo paso empieza aquí</p>
+      <h2 data-template-id="final-cta-title" class="canva-text mx-auto mt-3 max-w-2xl font-semibold leading-tight" style="color: rgb(255, 249, 243); font-weight: 600; font-style: normal; font-size: 24px;">Explora cada curso, conoce lo que incluye y elige la técnica que quieres aprender</h2>
+      <p data-template-id="final-cta-description" class="canva-text mx-auto mt-5 max-w-xl leading-7" style="color: rgb(243, 221, 212); font-weight: 400; font-style: normal; font-size: 17px;">Ingresa al enlace y habla directamente con nosotros</p>
+      <a data-template-id="final-cta-button" href="https://wa.me/573207015183" target="_blank" rel="noopener noreferrer" class="canva-button premium-button focus-ring mt-8 inline-block rounded-full px-7 py-3 font-bold" style="background: rgb(221, 183, 125); color: rgb(51, 33, 31); font-weight: 700; font-style: normal; font-size: 16px;">Quiero más información</a>
+    </section>
+  </main>
+
+  <footer data-template-id="footer-section" class="canva-footer w-full px-5 py-12 md:px-8" style="background: rgb(51, 33, 31);">
+    <div class="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p data-template-id="footer-brand" class="canva-text serif text-2xl font-semibold" style="color: rgb(255, 249, 243); font-weight: 600; font-style: normal; font-size: 25px;">Studio Expertas</p>
+        <p data-template-id="footer-description" class="canva-text mt-3 max-w-sm text-sm leading-6" style="color: rgb(239, 220, 209); font-weight: 400; font-style: normal; font-size: 16px;">Formación en belleza para crear con técnica, intención y confianza.</p>
+      </div>
+      <div>
+        <p data-template-id="footer-social-title" class="canva-text mb-3 text-sm font-bold" style="color: rgb(221, 183, 125); font-weight: 700; font-style: normal; font-size: 16px;">Encuéntranos en</p>
+        <div class="flex gap-4">
+          <a data-template-id="footer-instagram" href="https://www.instagram.com/studioexpertas?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring rounded-sm text-sm font-semibold" style="color: rgb(255, 249, 243); font-weight: 600; font-style: normal; font-size: 16px;">Instagram</a>
+          <a data-template-id="footer-facebook" href="https://www.facebook.com/profile.php?id=61584306800642" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring rounded-sm text-sm font-semibold" style="color: rgb(255, 249, 243); font-weight: 600; font-style: normal; font-size: 16px;">Facebook</a>
+          <a data-template-id="footer-tiktok" href="https://www.tiktok.com/@studioexpertas?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="canva-link focus-ring rounded-sm text-sm font-semibold" style="color: rgb(255, 249, 243); font-weight: 600; font-style: normal; font-size: 16px;">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-white/20 pt-6">
+      <p data-template-id="footer-rights" class="canva-text text-xs" style="color: rgb(239, 220, 209); font-weight: 400; font-style: normal; font-size: 16px;">© Studio Expertas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,29 @@
-function cambiarPestaña(indice) {
-    // Capturamos todos los contenidos de las pestañas y los botones
-    const pestañas = document.querySelectorAll('.tab-content');
-    const botones = document.querySelectorAll('.nav-tab');
+document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
 
-    // Removemos la clase 'active' de todos los elementos
-    pestañas.forEach(pestaña => pestaña.classList.remove('active'));
-    botones.forEach(boton => boton.classList.remove('active'));
+  const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-    // Le añadimos la clase 'active' solo a la pestaña y botón seleccionados
-    pestañas[indice].classList.add('active');
-    botones[indice].classList.add('active');
-}
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.querySelectorAll("#mobile-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  document.querySelectorAll("[data-scroll-target]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetElement = document.getElementById(button.dataset.scrollTarget);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+});
