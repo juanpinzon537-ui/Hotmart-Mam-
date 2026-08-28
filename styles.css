@@ -64,7 +64,11 @@ section[id] {
   section[id] { scroll-margin-top: 68px; }
   .premium-button, [data-scroll-target], [data-course] { min-height: 50px; }
   .hero-actions { width: 100%; }
-  .hero-actions > button { width: 100%; justify-content: center; }
+  .hero-actions > button,
+  .hero-actions > a { 
+    width: 100%; 
+    justify-content: center; 
+  }
   .course-card { width: 100%; }
   .course-card img { min-height: 210px; }
   #nosotras img { height: 320px; }
