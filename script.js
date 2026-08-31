@@ -26,19 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // Manejo especial de enlaces a WhatsApp para el navegador in-app de TikTok
-  const ua = navigator.userAgent || navigator.vendor || window.opera;
-  const isTikTok = ua.indexOf("TikTok") > -1;
-
-  if (isTikTok) {
-    // Si entra desde TikTok, interceptamos los clics a WhatsApp
-    document.querySelectorAll('a[href*="whatsapp.com"], a[href*="wa.me"]').forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        // Forzar la apertura directa usando el esquema nativo de la app
-        window.location.href = "whatsapp://send?phone=573207015183";
-      });
-    });
-  }
 });
